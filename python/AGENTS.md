@@ -42,3 +42,4 @@
    ```
 
 7. Annotate with the narrowest type that fits. Do NOT use `Any`, which turns off type checking wherever it spreads.
+8. Keep `__init__.py` minimal and implement core logic in dedicated, descriptively-named modules.
