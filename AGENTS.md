@@ -38,7 +38,7 @@
 
 1. Strictly follow Test-Driven Development.
 
-   a. Structure and comment tests with Given/When/Then, so they read like requirements:
+   1. Structure and comment tests with Given/When/Then, so they read like requirements:
 
       ```python
       def test_abc() -> None:
@@ -50,19 +50,26 @@
           ...
       ```
 
-   b. Write the simplest, clearest, most maintainable code to satisfy the test.
-   c. Then, refactor to make the code easier to maintain, follow design patterns, etc. (Do NOT skip the refactor step!)
-   d. Then, run `/code-review --fix` to identify & fix what could be improved, still using TDD.
+   2. Write the simplest, clearest, most maintainable code to satisfy the test.
+   3. Then, refactor to make the code easier to maintain, follow design patterns, etc. (Do NOT skip the refactor step!)
+   4. Then, run `/code-review --fix` to identify & fix what could be improved, still using TDD.
+
 2. When finding a bug, start with:
-   a. reproducing the bug in conditions as similar as possible to how the end user would experience it,
-   b. add a test to reproduce the bug,
-   c. fix the bug.
+
+   1. Reproducing the bug in conditions as similar as possible to how the end user would experience it.
+   2. Adding a test to reproduce the bug.
+   3. Fixing the bug.
+
    This ensures you find the real problem, so that your fix will actually solve it.
+
 3. If you see a linting failure, test failure, a flaky test, etc. fix it in a separate, atomic commit with JUST this
    change, even if not caused by what you are working on.
+
 4. Create small, atomic commits following "[conventional commits]", with concise commit messages/descriptions:
-   a. Unless told otherwise, commit TDD's Red/Green steps as one `feat` commit.
-   b. Unless told otherwise, commit TDD's Refactor step as one `refactor` commit.
+
+   1. Unless told otherwise, commit TDD's Red/Green steps as one `feat` commit.
+   2. Unless told otherwise, commit TDD's Refactor step as one `refactor` commit.
+
 5. Always sign `git` commits with `gpg`.
 
 [conventional commits]: https://www.conventionalcommits.org/en/v1.0.0/
