@@ -52,7 +52,10 @@
 
    2. Write the simplest, clearest, most maintainable code to satisfy the test.
    3. Then, refactor to make the code easier to maintain, follow design patterns, etc. (Do NOT skip the refactor step!)
-   4. Then, run `/code-review --fix` to identify & fix what could be improved, still using TDD.
+   4. Then, do a code review to identify & fix what could be improved, still using TDD:
+
+      1. Run `/code-review --fix` (if using `claude`), or
+      2. Run `/review` (if using `codex`).
 
 2. When finding a bug, start with:
 
