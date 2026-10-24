@@ -46,4 +46,5 @@
 9. Keep `__init__.py` minimal and implement core logic in dedicated, descriptively-named modules.
 10. Within each file, for better readability:
     1. Place public methods (`foo`) first, private methods (`_bar`) next, and helpers last.
-    2. Within each group, use depth-first call order: follow each call chain to its end before starting the next.
+    2. Within each group, use breadth-first call order: list all methods at one call level, in order of appearance,
+       before methods at the next level.
