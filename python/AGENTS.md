@@ -44,4 +44,6 @@
 7. Annotate with the narrowest type that fits. Do NOT use `Any`, which turns off type checking wherever it spreads.
 8. Avoid using `cast`. Prefer type annotation assignments (`x: Type = y`) and/or type guards (`isintance`/`TypeGuard`).
 9. Keep `__init__.py` minimal and implement core logic in dedicated, descriptively-named modules.
-10. Within a file, have "public" methods (`foo`) first, "private" methods (`_bar`) second, and "helpers" last.
+10. Within a file:
+    1. Have "public" methods (`foo`) first, "private" methods (`_bar`) second, and "helpers" last.
+    2. Keep all methods sorted in order of appearance, so that reading the code flows naturally from top to bottom.
