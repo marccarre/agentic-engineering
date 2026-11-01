@@ -50,6 +50,8 @@
           ...
       ```
 
+      Keep a test of 6 code lines or fewer compact: put no blank lines between the sections.
+      Put one blank line before `# When:` and `# Then:` in longer tests.
    2. Write the simplest, clearest, most maintainable code to satisfy the test.
    3. Then, refactor to make the code easier to maintain, follow design patterns, etc. (Do NOT skip the refactor step!)
    4. Then, run `/simplify` (if using `claude`).
